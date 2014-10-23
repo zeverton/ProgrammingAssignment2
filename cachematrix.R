@@ -1,5 +1,6 @@
 ## The purose f this code is to store a matrix and use that stored
-##matrix to compute and output the inverted matrix
+##matrix to compute and output the inverted matrix. I relied heavily on the
+## example code we were given to guide us on how to complete this function.
 
 
 
@@ -22,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## the CacheSolve function takes the output from makeCacheMatrix and determines where (in memory) to find
-## the needed matrix and then using the Solve function outputs the inverted matrix.
+## the needed matrix and then (using the Solve function) outputs the inverted matrix.
 cacheSolve <- function(x, ...) {
   m <- x$getmatrix()
   if(!is.null(m)) {
